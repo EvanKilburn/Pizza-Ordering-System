@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="533.0" prefWidth="386.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pizzaControls">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button fx:id="btnOrder" mnemonicParsing="false" onAction="#btnOrderClick" text="Add to Order" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+      <Label fx:id="lblMainTitle" alignment="CENTER" text="Welcome to Evan's Pizza!" GridPane.columnSpan="2" />
+      <Label text="Configure your pizza below" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Label alignment="TOP_LEFT" text="size:" GridPane.rowIndex="2" />
+      <ComboBox fx:id="cboSize" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ComboBox fx:id="cboVegetarian" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="vegetarian:" GridPane.rowIndex="3" />
+      <Label text="cheese:" GridPane.rowIndex="4" />
+      <Label text="green pepper:" GridPane.rowIndex="5" />
+      <Label text="pineapple:" GridPane.rowIndex="6" />
+      <Label text="ham:" GridPane.rowIndex="7" />
+      <ComboBox fx:id="cboCheese" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ComboBox fx:id="cboGreenP" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <ComboBox fx:id="cboPineapple" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <ComboBox fx:id="cboHam" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextArea fx:id="txtOrder" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="102.0" prefRowCount="3" prefWidth="326.0" text="&#10;&#10;" GridPane.columnSpan="2" GridPane.rowIndex="12" />
+      <Label text="quantity:" GridPane.rowIndex="9" />
+      <TextField fx:id="txtQuantity" prefHeight="30.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label fx:id="lblPizzaCost" text="\$0.00" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Button fx:id="btnCost" mnemonicParsing="false" onAction="#btnCostClick" text="Calculate Costs" GridPane.rowIndex="11" />
+      <Label prefHeight="26.0" prefWidth="177.0" text="cost with quantity" GridPane.rowIndex="10" />
+      <Label fx:id="lblQuantityCost" text="\$0.00" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Label GridPane.rowIndex="8" />
+      <Label text="cost per pizza" GridPane.rowIndex="8" />
+   </children>
+</GridPane>

@@ -1,0 +1,28 @@
+/* Author: Evan Kilburn
+ * Version: 1.0
+ * Description: handles design of GUI
+ */
+.root{
+	-fx-vgap: 10px;
+	-fx-hgap: 10px;
+	-fx-grid-lines-visible: false;
+	-fx-padding: 30px;
+	-fx-alignment: center;
+	-fx-background-color: orange;
+}
+.button{
+	-fx-font-family: "Consolas";
+	-fx-font-size: 20px;
+}
+.label{
+	-fx-font-family: "Consolas";
+	-fx-font-size: 20px;
+}
+.text-field {
+	-fx-font-family: "Arial";
+	-fx-font-size: 20px;	
+}
+#lblMainTitle{
+	-fx-font-family: "Comic Sans MS";
+	-fx-font-size: 25px;
+}
